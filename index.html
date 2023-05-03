@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Portfolio site </title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<a class="logo" href="#home">
+              <img src="logo.jpg" alt="logo" />
+		</a>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link active" href="#home">Home</a></li>
+			<li><a class="nav-link" href="#projects">Comments</a></li>
+			<li><a class="nav-link" href="#contact">Contact</a></li>
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <h3>Khaddafi Al Hakim.<hr></h3>
+		  <p>Selamat datang di website saya! Saya seorang mahasiswa semester 4 jurusan Sistem Informasi yang tertarik dalam teknologi dan inovasi di bidang IT. Terima kasih telah mengunjungi website saya, semoga informasi yang disajikan bermanfaat untuk Anda!</p>
+			  
+		  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+		    </div>
+			 
+		 </section> 
+	  </div>  
+		
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects">
+	  <div class="comment-section">
+		<h2>Silahkan Komentar Anda Tentang Website Saya
+		</h2>
+		<form id="comment-form" onsubmit="submitComment()">
+		  <div class="form-group">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+		  </div>
+		  <div class="form-group">
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+		  </div>
+		  <div class="form-group">
+			<label for="comment">Comment:</label>
+			<textarea id="comment" name="comment" required></textarea>
+		  </div>
+		  <button type="submit">Submit</button>
+		</form>
+	  </div>
+	  
+		 
+		<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────social media links─────-->
+		   <h3>Contact.<hr></h3>
+		   <p>Feel free to contact me on my social media.</p>
+		    <div class="social-media">
+			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-github'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+		    </div>
+		  </div>
+
+	</main>
+	  <footer class="copyright">© 2020 
+		  <a href="facebook.com" target="_blank"> Khaddafi Al Hakim</a>
+     </footer>
